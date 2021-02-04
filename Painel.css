@@ -36,5 +36,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.teste {
+    max-width: 60%;
+    background-color: aqua;
+    margin-top: 10%;
+    margin-left: 20%;
+    text-align: center;
+    padding: 50px;
+}
 
-Mandou bem!, agora ponha o seu código a prova no VSCode importando com npm todas as dependências.
+.endereco {
+    padding: 5px;
+}
