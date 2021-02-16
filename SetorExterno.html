@@ -142,11 +142,12 @@
 
 
       </div>
-      
+        
       </div>
     </div>
     
     
+        <!-- Force next columns to break to new line -->
            
 
         
@@ -166,7 +167,116 @@
 
     <script src="main.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="graficos.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(graficoIpa);
+      google.charts.setOnLoadCallback(graficoIpi);
+      // google.charts.setOnLoadCallback(graficoIpo);
+
+//Gráfico relativo ao índice do IPI
+
+function graficoIpi() {
+        var data3 = google.visualization.arrayToDataTable([
+          ['Meses', 'taxa'],
+          ['Jan',  10],
+          ['Fev',  20],
+          ['Mar',  25],
+          ['Abr',  35]
+        ]);
+
+        var options3 = {
+          title: 'IPA',
+          curveType: 'function',
+          legend: { position: 'rigth' },
+          height: 300,
+          width: 350
+        };
+
+var chart3 = new google.visualization.LineChart(document.getElementById('grafico3'));
+
+   chart3.draw(data3, options3);
+
+}
+
+
+//Gráfico relativo ao índice do IPo
+
+function graficoIpo() {
+        var data4 = google.visualization.arrayToDataTable([
+          ['Meses', 'taxa'],
+          ['Jan',  10],
+          ['Fev',  20],
+          ['Mar',  25],
+          ['Abr',  35]
+        ]);
+
+        var options4 = {
+          title: 'IPA',
+          curveType: 'function',
+          legend: { position: 'rigth' },
+          height: 300,
+          width: 350
+        };
+
+var chart4 = new google.visualization.LineChart(document.getElementById('grafico4'));
+
+   chart4.draw(data4, options4);
+
+}
+
+//Gráfico relativo ao índice do IPA
+
+      function graficoIpa() {
+        var data2 = google.visualization.arrayToDataTable([
+          ['Meses', 'taxa'],
+          ['Jan',  10],
+          ['Fev',  20],
+          ['Mar',  25],
+          ['Abr',  35]
+        ]);
+
+        var options2 = {
+          title: 'IPA',
+          curveType: 'function',
+          legend: { position: 'rigth' },
+          height: 300,
+          width: 350
+        };
+
+var chart2 = new google.visualization.LineChart(document.getElementById('grafico2'));
+
+   chart2.draw(data2, options2);
+
+}
+
+
+//Gráfico relativo ao índice do IGP-M
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Meses', 'taxa'],
+          ['Jan',  2.45],
+          ['Fev',  2.58],
+          ['Mar',  3.63],
+          ['Abr',  4.54]
+        ]);
+
+        var options = {
+          title: 'IGP-M',
+          curveType: 'function',
+          legend: { position: 'rigth' },
+          height: 300,
+          width: 350
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('grafico'));
+        
+        
+
+        chart.draw(data, options);
+     
+      }
+    </script>
 </body>
 
     </html>
