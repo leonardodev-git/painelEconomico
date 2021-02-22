@@ -69,15 +69,6 @@ img{
 }
 
 
-.graficos {
-    display: grid;
-    grid-template-columns: 100fr;
-    gap: 10%;
-    margin-top: 1%;
-    margin-left: 5%;
-    float: left;
-}
-
 table {
     background-color: rgb(121, 121, 121);
     width: 30%;
@@ -91,31 +82,53 @@ li {
     margin-left: 1%;
 }
 
-.row {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1%;
+.grafico-1 {
+    float: left;
+    margin: 0 1%;
 }
 
-#grafico2 {
-    margin-top: 2%;
+.grafico-2 {
+    float: left;
+}
+
+.col-4 {
+    margin: 2%;
+}
+
+.box {
+    margin-left: 95px;
+    margin-top: -24%;
+    
+}
+
+.tabela-1 {
+    width: 30%;
+    margin-left: 70%;
 }
 
 .table {
     background-color: white;
-    padding: 2%;
-    width: 100%;
-    height: 30%;
+    margin-bottom: 50px;
+    width: 350px;
+    height: 200px;
+    
 }
 
 .table2 {
     background-color: white;
-    margin-top: 15%;
-    width: 100%;
-    padding: 2%;
-    height: 60%;
+    width: 350px;
+    height: 300px;
 }
+.row {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.titulo-tabela {
+    background-color: blue;
+    color: white;
+}
+
 
 
 
