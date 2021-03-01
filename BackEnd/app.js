@@ -22,10 +22,12 @@ app.get('/dashboard/:indice', async (req, res) => {
 
   }
   res.json(array)
+
 })
 
 
 
 app.listen(3000, () => {
   console.log(`Servidor executando na uri http://localhost:3000`)
-})  
+})
+
