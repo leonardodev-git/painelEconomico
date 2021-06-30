@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Painel.css">
+    <title>Painel Indicador Econômico</title>
+</head>
+
+<body>
+    <div class="cabecalho-principal">
+        <div class="logo">
+            <img src="/images/rioprevidencia-logo.png" alt="" class="img" align="left">
+        </div>
+        <div>
+            <p class="header"><strong>PAINEL ECONÔMICO</strong></p>
+        </div>
+    </div>
+    <div id="titulo">Gerência de Operações e Planejamento | 2021</div>
+    <div class="flex">
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="Painel.html">Início</a></li>
+                    <li><a href="AtividadeEconomica.html">Atividade Econômica</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <div id="INPCipca" class="grafico"></div>
+            <div id="IPCACxNC" class="grafico"></div>
+            <div id="IPCAlivre" class="grafico"></div>
+            <div id="IPCAnucleos" class="grafico"></div>
+            <div id="IPCAdifusao" class="grafico"></div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="INPCxIPCA.js"></script>
+    <script src="IPCAcomercializavelxNaoComercializavel.js"></script>
+    <script src="IPCAlivrexMonitorado.js"></script>
+    <script src="NucleosIPCA.js"></script>
+    <script src="IPCAdifusao.js"></script>
+
+</body>
+
+</html>
